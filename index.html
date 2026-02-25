@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Galería Rosa de Van Gogh</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffe4ec, #ffc1d6);
+        color: #333;
+        text-align: center;
+    }
+
+    header {
+        background: #ff4f8b;
+        color: white;
+        padding: 30px;
+        font-size: 28px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .descripcion {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        background: #ff85a2;
+        margin: 0;
+        padding: 15px;
+        color: white;
+    }
+
+    footer {
+        background: #ff4f8b;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
 </head>
 <body>
-    <h1>hello world</h1>
+
+<header>
+🌸 Galería Rosa de Arte 🌸
+</header>
+
+<div class="descripcion">
+Descubre algunas de las pinturas más famosas en una galería con estilo rosa elegante.
+</div>
+
+<section class="galeria">
+
+<div class="card">
+<img src="images3.jpg" alt="La noche estrellada">
+<h3>La noche estrellada</h3>
+</div>
+
+<div class="card">
+<img src="images4.jpg" alt="Girasoles">
+<h3>Girasoles</h3>
+</div>
+
+<div class="card">
+<img src="image.png" alt="Campo de trigo con cipreses">
+<h3>Campo de trigo con cipreses</h3>
+</div>
+
+<div class="card">
+<img src="images2.jpg" alt="Autorretrato">
+<h3>Autorretrato</h3>
+</div>
+
+</section>
+
+<footer>
+Hecho con ❤️ y estilo rosa
+</footer>
+
 </body>
 </html>
